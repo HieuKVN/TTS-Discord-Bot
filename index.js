@@ -14,7 +14,7 @@ client.on('ready', () => {
 client.on('messageCreate', message => {
 
     if (message.author.bot) return;
-    const prefix = '>';
+    const prefix = '>'; //PREFIX HERE
     if (!message.content.startsWith(prefix)) return;
     const args = message.content.slice(prefix.length).trim().split(' ');
     const command = args.shift().toLowerCase();
@@ -37,4 +37,4 @@ client.on('messageCreate', message => {
     player.play(resource);      }
 
 });
-client.login("TOKEN")
+client.login("TOKEN") //TOKEN HERE
