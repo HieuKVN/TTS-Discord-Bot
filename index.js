@@ -20,10 +20,10 @@ client.on('messageCreate', message => {
     const command = args.shift().toLowerCase();
     if (command === '<') {
         const { channel } = message.member.voice;
-    if (!args[0]) return message.channel.send('Vui lòng nhập gì đó để bot nói!');
-    if (!channel) return message.reply('Bạn phải vào room voice để sử dụng lệnh này!');
+    if (!args[0]) return message.channel.send('Please type something for the bot to say!');
+    if (!channel) return message.reply('You must be in the voice room to use this command!');
     const string = args.join(' ');
-    if (string.length > 200) return message.channel.send('Vui lòng nhập dưới 200 ký tự ');
+    if (string.length > 200) return message.channel.send('Please enter less than 200 characters');
     const audioURL = getAudioUrl(string, {
       lang: 'vi',
       slow: false,
