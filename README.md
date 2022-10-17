@@ -17,7 +17,6 @@ Follow these steps to install the bot regardless of your platform.
         - Can be found on your [Discord developer portal](https://discord.com/developers/applications)
 
 -----------
-## **Usage**
-Now that you've successfully completed the installation process, you're ready to start using the bot! Assuming you've already invited it to one of your servers and you've got enough permissions to use it, you can run a couple of commands to get started.
+## Bot commands
 
-1. Type `PREFIX`speak to use the bot.
+`"PREFIX"say <text>` - Says text out loud
