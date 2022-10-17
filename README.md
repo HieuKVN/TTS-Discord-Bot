@@ -15,8 +15,13 @@ Follow these steps to install the bot regardless of your platform.
     - `PREFIX`: Changing this is optional, but you can change your Discord bot's prefix if you want
     - `TOKEN`: Your Discord bot's token
         - Can be found on your [Discord developer portal](https://discord.com/developers/applications)
-
+        
+## Notes
+- Dependencies: [discord.js](https://www.npmjs.com/package/discord.js), [ffmpeg](https://www.npmjs.com/package/ffmpeg-static), [google-tts-api](https://www.npmjs.com/package/google-tts-api) and [libsodium-wrappers](https://www.npmjs.com/package/libsodium-wrappers)
 -----------
 ## Bot commands
 
 `"PREFIX"say <text>` - Says text out loud
+
+From HieuK With Love <3
+#END
