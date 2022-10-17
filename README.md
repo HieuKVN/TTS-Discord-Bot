@@ -23,5 +23,7 @@ Follow these steps to install the bot regardless of your platform.
 
 `"PREFIX"say <text>` - Says text out loud
 
+-----------
+## END
+
 From HieuK With Love <3
-### END
