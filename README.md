@@ -1,29 +1,44 @@
 # Simple Discord TTS Bot
-This Discord bot allows users to talk in a voice chat without the use of a microphone. With the use of a Text to Speech service such as IBM Watson, it's possible to convert a Discord user's text messages to speech.
 
------------
+This Discord bot allows users to communicate in a voice chat without needing a microphone. By utilizing a Text to Speech service, such as Google TTS, the bot can convert a user's text messages into speech.
+
+---
+
 ## **Installation**
-These steps will get you up and running as soon as possible.
 
-**General installation**:
+Follow these steps to get the bot up and running quickly.
 
-Follow these steps to install the bot regardless of your platform.
+### General Installation:
 
-1. Clone this repository.
-2. Install the NodeJS dependencies by running the `npm i` command in a terminal window. This will install all of the needed NodeJS libraries that are listed in the `package.json` file.
-3. Edit the following variables in the `index.js` file:
-    - `PREFIX`: Changing this is optional, but you can change your Discord bot's prefix if you want
-    - `TOKEN`: Your Discord bot's token
-        - Can be found on your [Discord developer portal](https://discord.com/developers/applications)
-        
-## Notes
-- Dependencies: [discord.js](https://www.npmjs.com/package/discord.js), [ffmpeg](https://www.npmjs.com/package/ffmpeg-static), [google-tts-api](https://www.npmjs.com/package/google-tts-api) and [libsodium-wrappers](https://www.npmjs.com/package/libsodium-wrappers)
+1. Clone this repository to your local machine.
+2. Open a terminal window and navigate to the cloned directory.
+3. Install the required NodeJS dependencies by running the command:
+   ```
+   npm install
+   ```
+4. Configure the bot by editing the `config.json` file:
+   - `TOKEN`: Your Discord bot's token, which can be found on your [Discord developer portal](https://discord.com/developers/applications)
+   - `PREFIX`: (Optional) Change the bot's command prefix if desired
 
-## Bot commands
+## **Dependencies**
 
-`"PREFIX"say <text>` - Says text out loud
+The bot relies on the following NodeJS libraries:
 
+- [discord.js](https://www.npmjs.com/package/discord.js)
+- [ffmpeg-static](https://www.npmjs.com/package/ffmpeg-static)
+- [google-tts-api](https://www.npmjs.com/package/google-tts-api)
+- [libsodium-wrappers](https://www.npmjs.com/package/libsodium-wrappers)
 
-## END
+## **Bot Commands**
+
+- `"PREFIX"ping` - Responds with "Pong!"
+- `"PREFIX"speak <text>` - Converts the provided text to speech and plays it in the voice channel
+
+## **Notes**
+
+- Ensure that the bot has the necessary permissions to join and speak in voice channels.
+- The text for the `speak` command should be less than 200 characters.
+
+## **Credits**
 
 From HieuK With Love <3
