@@ -12,8 +12,6 @@ const client = new Client({
   ],
 });
 
-let isSpeaking = false;
-
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
@@ -53,12 +51,6 @@ client.on('messageCreate', message => {
     player.play(resource);
 
     message.channel.send(`${message.author.username} say: "${string}"`);
-
-    isSpeaking = true;
-
-    player.on(AudioPlayerStatus.Idle, () => {
-      isSpeaking = false;
-    });
   }
 });
 
